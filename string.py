@@ -47,7 +47,7 @@ print(cars.upper())     # Верхний регистр VOLVO,AUDI,LADA
 print(cars.title())     # Первая буквая большая Volvo,Audi,Lada
 print(cars.lower())     # Нижний регистр volvo,audi,lada
 
-# Заммена подстроки в строке
+# Замена подстроки в строке
 email_adress = 'Mail: _mail_'
 email = 'my@gmail.com'
 print(email_adress.replace('_mail_',email))     # _mail_ заменяем на значение переменной EMAIL благодаря .replace
