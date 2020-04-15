@@ -1,7 +1,7 @@
 # # --------------- Тип данных СТРОКА  (str) ---------------
 #
 #     # Инициализация
-print('------ ИНИЦИАЛИЗАЦИЯ ------ ')
+print('------ ИНИЦИАЛИЗАЦИЯ ЧЕРЕЗ КАВЫЧКИ ------ ')
 
 temp_str = 'Mark Auto Volvo'
 print(temp_str)
@@ -43,11 +43,17 @@ brand = 'Volvo'
 price = 1.5
 car = f'Марка: {brand} Цена: {price}'
 print(car)
+print(car.format(brand, price))     # старый вариант
 print()
 
 
     # Методы
 print('------ МЕТОДЫ ------ ')
+print('Метод FIND — поиск подстроки в строке')
+
+print(temp_str.find('Vol'))
+print()
+
 # SPLIT — разделение одной большой строки на подстроки
 
 print('Метод SPLIT — разделение одной большой строки на подстроки')
@@ -56,6 +62,12 @@ print(temp_str.split())
 cars = 'volvo,Audi,Lada'        # Если не будет пробелов — будет считаться одной строчкой
 print(cars.split())             # Вывод будет: ['volvo,audi,lada']
 print(cars.split(','))          # Вывод будет: ['volvo', 'audi', 'lada']
+print()
+
+print('Метод ISDIGIT — состоит ли строка только из цифр')
+print(temp_str.isdigit())
+number = '111'
+print(number.isdigit())
 print()
 
 # Методы форматирования строк
@@ -70,3 +82,4 @@ print('Замена подстроки в строке')
 email_adress = 'Mail: _mail_'
 email = 'my@gmail.com'
 print(email_adress.replace('_mail_',email))     # _mail_ заменяем на значение переменной EMAIL благодаря .replace
+print()

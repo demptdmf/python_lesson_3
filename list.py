@@ -91,11 +91,22 @@ print()
 
 # SORT
 print('Метод Sort — сортировка (от наименьшего к наибольшему)')
-integer_list = [9, 3, 5, 8, 6, 2]
+integer_list = [12, 3, 14, 8, 6, 21]
 integer_list.sort()
 print(integer_list)
 print()
 
+# POP
+print('Метод POP — удаление последнего элемента)')
+integer_list.pop()
+print(integer_list)
+print()
+
+# CLEAR
+print('Метод CLEAR — удаление всех элементов)')
+integer_list.clear()
+print(integer_list)
+print()
 
     # Обработка списков (map, filter, reduce)
 print('------ ОБРАБОТКА СПИСКОВ ------')

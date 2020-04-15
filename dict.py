@@ -5,7 +5,15 @@ print('Обычная, через фигурные скобки {}')
 dict_temp = {}                      # Пустой словарь
 print(type(dict_temp), dict_temp)   # Вывод типа словаря (тип dict) и вывод самого словаря
 
-dict_temp = {'dict1': 1, 'dict2': 2.1, 'dict3': 'name', 'dict4': [1, 2, 3, 4]}      # Занесение различных данных в словарь
+# Занесение различных данных в словарь
+
+dict_temp = {
+    'dict1': 1,
+    'dict2': 2.1,
+    'dict3': 'name',
+    'dict4': [1, 2, 3, 4]
+}
+
 print(type(dict_temp), dict_temp)
 print()
 
@@ -82,6 +90,7 @@ print()
 
 # !!! pair — Это пара, но удобно работать с конкретными элементами словаря !!!
 
+
 print('По конкретным элементам, без применения списка')
 for key, value in dict_temp.items():                 # key — это первый элемент в паре (ключ), value — второй элемент (значение)
     print(key, value)
@@ -92,7 +101,14 @@ for key in dict_temp.keys():
     print(key)
 print()
 
+print('По ключам. Сокращенный код')
+for key in dict_temp:
+    print(key)
+print()
+
 print('По значениям. Выводим только значения ключей.')
 for value in dict_temp.values():
     print(value)
+print()
+
 print()
