@@ -70,26 +70,27 @@ print(text_dict)
 # 4. Почему не работает и как оно читается хочется понять преимущественно, т.к. этот код более короткий с одним правильным циклом
 
 
+# ВАРИАНТ 3
+
+from collections import defaultdict
+word_count = defaultdict(int)
+for word in text_list:
+    print(word, word_count[word])
+    word_count[word] += 1
 
 
+# ---- ВОПРОС К ВАРИАНТУ 3 ----
+# 5. Самый топ варинат, как мне показалось, но опять же — как читается, что из себя представляет и так далее
 
-
-
-
-
-
-# если скопировать значение листа и присвоить ему dict — то пишет ошибку (даже если это значание закомментировано):
+# ---- ПРИМЕЧАНИЕ ----
+# Если скопировать значение листа из п.3 и присвоить ему dict — то пишет вот такую ошибку (даже если это значание закомментировано):
 # SyntaxError: Non-UTF-8 code starting with '\xd0' in file homework_3.py on line 28, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
-# Искал в интернете решение — предложили import collections, но там слова даны в str, это значит нужно привести к листу
-
-        # from collections import defaultdict
-        # word_count = defaultdict(int)
-        # for word in text:
-        #     print(word, word_count[word])
-        #     word_count[word] += 1
 
 
-# print('5) Вывести 5 наиболее часто встречающихся слов (sort), вывести количество разных слов в тексте (set).')
+
+
+print()
+print('5) Вывести 5 наиболее часто встречающихся слов (sort), вывести количество разных слов в тексте (set).')
 
 
 
