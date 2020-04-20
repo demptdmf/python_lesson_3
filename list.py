@@ -145,9 +145,16 @@ print(new_integer_list, '— выведены все цирфы списка, м
 print()
 
 # REDUCE
-print('Reduce — применяется ко всем элементам списка и возвращает некоторый один элемент')
-integer_list = [1, 2, 3, 4]
+print('Reduce —  один элемент')
+integer_list = [1, 2, 3, 4]применяется ко всем элементам списка и возвращает некоторый
 from functools import reduce
 sum = reduce(lambda x,y: x+y, integer_list)
 product = reduce(lambda x,y: x*y, integer_list)
 print(sum, '— сумма элементов листа;', product, '— произведение элементов листа')
+
+a = [1, 0, 0, 0, 7]
+del a[:-3]
+print(a)
+# то же самое что и a[2:]
+a = [1, 0, 0, 0, 7]
+print(a[2:])
