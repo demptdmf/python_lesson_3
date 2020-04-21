@@ -1,3 +1,15 @@
+for i in 'hello world':
+    print(i * 2, end='')       # печатать каждый индекс дважды + печатать в ряд,
+print()
+
+
+for i in 'hello world':
+    if i == 'o':
+        break
+    print(i * 2, end='')        # печатать каждый индекс дважды. Но если найден индекс О — не выполняь цикл (не печатать)
+print()
+
+
 
 friend_name = 'Max'
 friends = ['Max', 'Leo', 'Kate']

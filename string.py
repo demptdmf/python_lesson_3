@@ -81,5 +81,5 @@ print()
 print('Замена подстроки в строке')
 email_adress = 'Mail: _mail_'
 email = 'my@gmail.com'
-print(email_adress.replace('_mail_',email))     # _mail_ заменяем на значение переменной EMAIL благодаря .replace
+print(email_adress.replace('_mail_', email))     # _mail_ заменяем на значение переменной EMAIL благодаря .replace
 print()
