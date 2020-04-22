@@ -145,8 +145,8 @@ print(new_integer_list, '— выведены все цирфы списка, м
 print()
 
 # REDUCE
-print('Reduce —  один элемент')
-integer_list = [1, 2, 3, 4]применяется ко всем элементам списка и возвращает некоторый
+print('Reduce — применяется ко всем элементам списка и возвращает некоторый один элемент')
+integer_list = [1, 2, 3, 4]
 from functools import reduce
 sum = reduce(lambda x,y: x+y, integer_list)
 product = reduce(lambda x,y: x*y, integer_list)
@@ -158,3 +158,31 @@ print(a)
 # то же самое что и a[2:]
 a = [1, 0, 0, 0, 7]
 print(a[2:])
+print()
+
+'''Когда цикл проходит через последовательность, позиционный индекс 
+и связанное значение могут быть извлечены одновременно с помощью функции enumerate().'''
+
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+print()
+
+'''При прохождении цикла через две и более последовательности одновременно, 
+записи могут быть объединены в пары с помощью функции zip().'''
+
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+     print(f'What is your {q}?  It is {a}.')
+     # или можно использовать, это одинаковое
+     print('What is your {0}?  It is {1}.'.format(q, a))
+print()
+
+
+'''Для цикла по последовательности в отсортированном порядке, 
+используйте функцию sorted(), которая возвращает новый отсортированный список, оставляя исходный неизменным.'''
+
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for f in sorted(set(basket)):
+    print(f)
+print()

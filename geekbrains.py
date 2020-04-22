@@ -16,7 +16,7 @@ hero = 'Superman'
 if 'man' in hero:  # Есть ли "man" в строке hero
     print('yes')
 
-if hero.find('s') != -1:        # Функция find возвращает либо найденное условие, а если не нашло — присылает -1.
+if hero.find('z') != -1:        # Функция find возвращает либо найденное условие, а если не нашло — присылает -1.
     print('YES')
 else: print('no :(')
 

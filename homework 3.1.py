@@ -4,7 +4,7 @@ text = f.read()
 '''1) методами строк очистить текст от знаков препинания;'''
 symbols = ['.', ',', ';', ':', '!', '?', '«', '»', '—']
 for symbols in symbols:
-    text = text.replace(symbols,'')
+    text = text.replace(symbols, '')
 print()
 
 '''2) сформировать list со словами (split);'''
