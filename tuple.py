@@ -48,6 +48,7 @@ print(temp_tuple)
 print()
 
 
+
     # Обработка кортежей (map, filter, reduce)
 print('------ ОБРАБОТКА КОРТЕЖЕЙ ------')
 

@@ -26,19 +26,18 @@ dict_text = {}                                  # Создаем пустой с
 for word in text_list:                          # В ЦИКЛЕ БЕРЕТСЯ ПЕРВОЕ СЛОВО, ОБХОДИТСЯ ПО СПИСКУ,
     dict_text[word] = text_list.count(word)     # СЧИТАЕТСЯ КОЛ-ВО ПОВТОРЕНИЙ, ЗАПИСЫВАЕТСЯ В СЛОВАРЬ ПОД КЛЮЧЕМ С СООТВЕТСВУЮЩИМ ИМЕНЕМ И ПЕРЕХОДИТ К СЛЕДУЩЕМУ ЭЛЕМЕНТУ
 print(dict_text)
-print(len(dict_text))
 print()
 '''ДЛЯ СЛОВА В СПИСКЕ ЗАПИСЫВАТЬ В СЛОВАРЬ СЛОВО С КОЛИЧЕСТВОМ ПОВТОРЕНИЙ ЭТОГО СЛОВА В СПИСКЕ'''
 
 
-'''5) вывести 5 наиболее часто встречающихся слов (sort)'''
+'''5.1) Вывести 5 наиболее часто встречающихся слов (sort)'''
 text_list = list(dict_text.items())
 text_list.sort(key=lambda i: i[1])
 text_list.reverse()
 print(text_list[:5])
 print()
 
-'''вывести количество разных слов в тексте (set).'''
+'''5.2) вывести количество разных слов в тексте (set).'''
 
 print(len(text_list), '— элементов в списке')
 print(len(set(text_list)), '— элементов в множестве')
@@ -54,6 +53,3 @@ for value in dict_text.values():
     if value > 1:
         different_count += 1
 print(different_count, '— разных слов')
-
-
-)

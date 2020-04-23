@@ -15,7 +15,6 @@ print()
 dict_ = {}
 for word in text:
     dict_[word] = text.count(word)
-
 dict_tolist = list(dict_.items())
 print('Количество повторений слов:', dict_tolist)
 
