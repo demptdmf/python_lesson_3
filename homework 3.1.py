@@ -38,18 +38,21 @@ print(text_list[:5])
 print()
 
 '''5.2) вывести количество разных слов в тексте (set).'''
-
 print(len(text_list), '— элементов в списке')
-print(len(set(text_list)), '— элементов в множестве')
+print(text_list)
 
-similar_count = 0
-for value in dict_text.values():
-    if value == 1:
-        similar_count += 1
-print(similar_count, '— одинаковых слов')
+print(len(set(text_list)), '— элементов в множестве')
+print(set(text_list))
+print()
 
 different_count = 0
 for value in dict_text.values():
-    if value > 1:
+    if value == 1:
         different_count += 1
 print(different_count, '— разных слов')
+
+similar_count = 0
+for value in dict_text.values():
+    if value > 1:
+        similar_count += 1
+print(similar_count, '— одинаковых слов')
